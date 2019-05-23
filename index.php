@@ -5,16 +5,14 @@
     $master = "master";
     $password = "lab-password" ;
 
-	$conn = mysqli_connect($endpoint, $master, $password);
+	$db = mysqli_connect($endpoint, $master, $password, "lab");
 	if (mysqli_connect_errno()) {
 		echo "error";
     }else{
 	$sql = "CREATE DATABASE lab;";
 	mysqli_query($conn, $sql);
-	}
-
-	$db = mysqli_connect($_SESSION['endpoint'], $_SESSION['master'], $_SESSION['password'], "lab");
-	
+    }
+    
 	$table = "CREATE TABLE `Lab` (
 			   `ID` int(11) NOT NULL AUTO_INCREMENT,
 			   `Name` varchar(45) DEFAULT NULL,
