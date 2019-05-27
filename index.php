@@ -1,7 +1,7 @@
 <?php 
     session_start();
     
-    $endpoint = "lab-db.cizutbhrlry2.us-east-1.rds.amazonaws.com" ;
+    $endpoint = "lab.cizutbhrlry2.us-east-1.rds.amazonaws.com" ;
     $master = "master";
     $password = "lab-password" ;
 
