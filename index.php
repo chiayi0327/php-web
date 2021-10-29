@@ -1,7 +1,7 @@
 <?php 
     session_start();
     
-    $endpoint = "lab.cizutbhrlry2.us-east-1.rds.amazonaws.com" ;
+    $endpoint = "<RDS endpoint>" ;
     $master = "master";
     $password = "lab-password" ;
 
